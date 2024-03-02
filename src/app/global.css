@@ -1,0 +1,20 @@
+body{
+    padding: 0;
+    margin: 0;
+}
+
+@keyframes animatedBackground {
+    from {
+      background-position: 0 0;
+    }
+    to {
+      background-position: 100% 0;
+    }
+  }
+  
+  body {
+    background-color: #000; /* Color de fondo */
+    background-image: linear-gradient(90deg, #ff00ff, #00ff00); /* Gradiente de colores */
+    background-size: 200% auto; /* Tamaño del fondo */
+    animation: animatedBackground 5s ease infinite; /* Animación */
+  }

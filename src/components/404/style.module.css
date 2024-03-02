@@ -1,0 +1,96 @@
+
+#body {
+  padding: 0;
+  margin: 0;
+}
+
+#notfound {
+  position: relative;
+  height: 100vh;
+}
+
+.notfound_bg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: url('./bg.jpg');
+  background-size: 120%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+
+#notfound .notfound_bg:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.25);
+}
+
+#notfound .notfound {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+#notfound .notfound:after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50% , -50%);
+      -ms-transform: translate(-50% , -50%);
+          transform: translate(-50% , -50%);
+  width: 100%;
+  height: 600px;
+  background-color: rgba(255, 255, 255, 0.7);
+  -webkit-box-shadow: 0px 0px 0px 30px rgba(255, 255, 255, 0.7) inset;
+          box-shadow: 0px 0px 0px 30px rgba(255, 255, 255, 0.7) inset;
+  z-index: -1;
+}
+
+.notfound {
+  max-width: 600px;
+  width: 100%;
+  text-align: center;
+  padding: 30px;
+  line-height: 1.4;
+}
+
+.notfound .notfound_404 {
+  position: relative;
+  height: 200px;
+}
+
+.notfound .notfound_404 h1 {
+  font-family: 'Passion One', cursive;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  font-size: 220px;
+  margin: 0px;
+  color: #222225;
+  text-transform: uppercase;
+}
+
+
+@media only screen and (max-width: 480px) {
+  .notfound .notfound_404 {
+    height: 146px;
+  }
+
+  .notfound .notfound_404 h1 {
+    font-size: 146px;
+  }
+
+  .notfound_bg {
+    background-size: 300%;
+  }
+}
