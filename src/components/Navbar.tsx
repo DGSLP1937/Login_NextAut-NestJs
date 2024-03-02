@@ -71,6 +71,8 @@ const BarraNavegacion = () => {
             {session?.user ? (
               <>
               <Nav.Link href="/dashboard">Dashboard</Nav.Link>
+              <Nav.Link href="/profile">Profile</Nav.Link>
+
               <Nav.Link href="/dashboard">
                 <button
                   onClick={() => signOut()}

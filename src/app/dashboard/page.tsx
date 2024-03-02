@@ -1,7 +1,7 @@
 "use client";
 
 import ListCats from '@/components/table_cats/list.cats';
-import 'bootstrap/dist/css/bootstrap.min.css';
+
 
 
 

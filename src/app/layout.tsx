@@ -1,8 +1,11 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
+
 import './global.css';
-import SessionAuthProvider from "./context/SessionAuthProvider";
 import 'bootstrap/dist/css/bootstrap.min.css';
+
+import SessionAuthProvider from "./context/SessionAuthProvider";
+
 import BarraNavegacion from "@/components/Navbar";
 
 
@@ -22,10 +25,10 @@ export default function RootLayout({
     <html className="h-full" lang="en">
       <head>
       </head>
-      <body className="h-full">
+      <body>
         <SessionAuthProvider>
-        <BarraNavegacion />
-          <main className="container">
+          <BarraNavegacion />
+          <main>
             {children}
           </main>
         </SessionAuthProvider>
